@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>asdasd</title>
+
+		<style>
+			.mty{clear:both;}
+			#fader-gal{display:block; height:375px; width:960px; position:relative;}
+			#fader-gal .fader-gal-img{position:absolute; z-index:1; display:block; height:375px; width:960px;}
+
+			#faderGallery-menu{position:absolute; z-index:10000; padding:10px; margin:0px;}
+			.faderGallery-menu-item{display:block; width:13px; height:13px;list-style:none; background-repeat:no-repeat; background-position:0px 0px; background-image:url(./on-off.png); float:left; margin:0px 10px 10px 0px; }
+				.faderGallery-menu-item a{text-decoration:none; display:block;}
+			.faderGallery-menu-item.on{ background-position:0px -15px; }
+		</style>
+
+		<script src="jquery-1.7.1.min.js"></script>		
+		<script src="jquery-fader-gallery-0.0.1.js"></script>
+
+		<script>		
+			$(function() {
+				$('#fader-gal').faderGallery();
+			});			
+		</script>
+	</head>
+	<body>
+
+		<div id="fader-gal">
+			<a href="" class="fader-gal-img"><img src="example-1.png" alt="" /></a>
+			<a href="" class="fader-gal-img"><img src="example-2.png" alt="" /></a>
+			<a href="" class="fader-gal-img"><img src="example-3.png" alt="" /></a>
+			<a href="" class="fader-gal-img"><img src="example-4.png" alt="" /></a>
+			<a href="" class="fader-gal-img"><img src="example-5.png" alt="" /></a>
+		</div>
+		<div class="mty"></div>
+
+	</body>
+</html>
